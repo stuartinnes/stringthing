@@ -48,7 +48,7 @@ stringthing is json -v '{"isThis":"JSON?"}' # exit code 1 and "false" printed to
 cat somefile.json | xargs stringthing is json 
 
 # use this a lot? create an alias 
-alias isJSON="stringthing format json"
+alias isJSON="stringthing is json"
 isJSON '{"isThis":"JSON?"}'
 ```
 
