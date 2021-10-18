@@ -42,7 +42,7 @@ COMMANDS:
 stringthing is json '{"isThis":"JSON?"}' # exit code 0
 
 # check if a value is valid JSON with verbose output 
-stringthing is json -v '{"isThis":"JSON?"}' # exit code 1 and "false" printed to stdout
+stringthing is json -v '{"validJSON?"}' # exit code 1 and "false" printed to stdout
 
 # check if a file is valid JSON
 cat somefile.json | xargs stringthing is json 
